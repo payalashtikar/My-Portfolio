@@ -1,0 +1,14 @@
+.profile-container{
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-details{
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 25px;
+}
