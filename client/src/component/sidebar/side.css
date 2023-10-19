@@ -1,0 +1,104 @@
+.app {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    color: white;
+    /* height: 100vh; */
+    min-height: 100vh;
+    transition: margin-left 0.3s;
+}
+
+.icon {
+    height: 100vh;
+    background-color: aliceblue;
+    color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 175px;
+    height: 100vh;
+    color: #fff;
+    padding: 20px;
+    display: none;
+}
+
+.sidebar.open {
+    display: block;
+    padding-top: 50px;
+    margin-left: 0;
+    background-color: aliceblue;
+    /* border-right: 1px solid gray; */
+    color: gray;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    height: 100vh;
+    color: black;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    color: gray;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: smaller;
+    margin: 25px 5px;
+    display: flex;
+    font-weight: 0;
+    color: gray;
+}
+
+li a {
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        /* width: 100%; */
+        width: 220px;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: aliceblue;
+        z-index: 1;
+    }
+
+    .sidebar.open {
+        margin-left: 50px;
+        /* margin-left: 100%; */
+        /* min-height: 100vh; */
+        background-color: white;
+    }
+
+    .icon {
+        height: 60px;
+        /* height: 100vh; */
+        
+        /* padding: 5px; */
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+    }
+
+    .sidebar li {
+        margin: 0;
+        padding: 5px;
+        font-size: 14px;
+    }
+}
